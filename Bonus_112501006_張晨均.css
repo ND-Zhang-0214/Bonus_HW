@@ -1,0 +1,81 @@
+/* 全局樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 父容器樣式 */
+body {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* 表單容器樣式 */
+.form-container {
+    width: 60%; /* 容器寬度 */
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題樣式 */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 表單行樣式 */
+.form-row {
+    display: flex; /* 使用 Flexbox 進行水平排列 */
+    gap: 10px; /* 控制子元素之間的距離 */
+    margin-bottom: 15px;
+    align-items: center; /* 垂直居中 */
+}
+
+/* 標籤樣式 */
+label {
+    width: 20%; /* 標籤寬度，讓其左對齊 */
+    text-align: right; /* 標籤文字右對齊 */
+    font-weight: bold;
+}
+
+/* 輸入框樣式 */
+input, textarea {
+    flex: 1; /* 輸入框占用剩餘空間 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 文本域樣式 */
+textarea {
+    height: 100px;
+    resize: none; /* 禁止調整大小 */
+}
+
+/* 圖片樣式 */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* 特殊樣式，讓 input2 和 input3 在同一行 */
+.form-row.double-input {
+    display: flex; /* 水平排列 */
+    gap: 10px; /* 控制兩個輸入框之間的距離 */
+}
+
+input#input2, input#input3 {
+    flex: 1; /* 每個輸入框占用相等的空間 */
+}
